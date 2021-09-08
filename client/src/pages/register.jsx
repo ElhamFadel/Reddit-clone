@@ -1,31 +1,31 @@
-import React from 'react'
+import React from "react";
 
 function register() {
-    return (
+  return (
     <>
-     <div>
+      <div>
         <h1>Register</h1>
         <form>
-            <label>
-                Username:
-                <input type="text" name="username" />
-            </label>
-            <br />
-            <label>
-                Password:
-                <input type="password" name="password" />
-            </label>
-            <br />
-            <label>
-                Confirm Password:
-                <input type="password" name="confirmPassword" />
-            </label>
-            <br />
-            <input type="submit" value="Submit" />
+          <label>
+            Username:
+            <input type="text" name="username" />
+          </label>
+          <br />
+          <label>
+            Password:
+            <input type="password" name="password" />
+          </label>
+          <br />
+          <label>
+            Confirm Password:
+            <input type="password" name="confirmPassword" />
+          </label>
+          <br />
+          <input type="submit" value="Submit" />
         </form>
-     </div>
+      </div>
     </>
-    )
+  );
 }
 
-export default register
+export default register;
