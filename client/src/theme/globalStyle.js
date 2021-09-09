@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     --primary: #DAE0E6;
     --secondary:#1C1C1C;
     --tertiary: #FA4502;
+    --blue:#0079d3;
+    --white:#fff;
    /*
    color for font , header, footer, button, etc
    */
