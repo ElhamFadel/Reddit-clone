@@ -24,9 +24,18 @@ const GlobalStyle = createGlobalStyle`
   a{
       text-decoration: none;
   }
-  ul{
-      list-style: none;
-  }
+  img {
+    max-width: 100%;
+}
+
+i {
+    cursor: pointer;
+}
+
+ul,
+nav {
+    list-style: none;
+}
 
 `;
 export default GlobalStyle;

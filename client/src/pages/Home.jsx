@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import GlobalStyle from "../theme/globalStyle";
-
+import { Header } from "../components";
 function Home() {
   return (
-    <div>
+    <Fragment>
       <GlobalStyle />
-      <h1>Home</h1>
-    </div>
+      <Header />
+    </Fragment>
   );
 }
 
