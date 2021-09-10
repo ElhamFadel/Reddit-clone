@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { reddit, redditWorld } from "../../assets";
 import { InputSearch, Button } from "../../ui";
+import { useStore } from "../../center-data/context";
 import * as S from "./style";
 function Header() {
-  const [search, setSearch] = useState("");
+  const [{ search }, dipatch] = useStore();
   return (
     <S.Header className="header-wrapper">
+      {console.log(search)}
       <InputSearch
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => dipatch({ type: "SEARCH", payload: e.target.value })}
         placeholder="Search ... "
         type="text"
         name="search"
